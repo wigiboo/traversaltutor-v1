@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Graph Algorithm Visualizations</title>
+  <link rel="stylesheet" href="visualPages.css">
+  <style>
+    .intro-container {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 2em;
+      background: linear-gradient(to bottom, #0f1610, #0a0e0a);
+      border: 2px solid #1a3a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 255, 136, 0.3), inset 0 0 50px rgba(0, 255, 136, 0.1);
+    }
+
+    .intro-container h1 {
+      color: #00ff88;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+    .intro-container h2 {
+      color: #00ff88;
+      font-size: 1.8em;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #1a3a1a;
+      padding-bottom: 0.5em;
+    }
+
+    .intro-content {
+      color: #e8fde8;
+      line-height: 1.8;
+      font-size: 1.1em;
+      margin-bottom: 1.5em;
+    }
+
+    .intro-content p {
+      text-align: justify;
+      margin-bottom: 1em;
+    }
+
+    .intro-content ul {
+      margin-left: 2em;
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+    }
+
+    .intro-content li {
+      margin-bottom: 0.5em;
+      color: #7fb87f;
+    }
+
+    .highlight-box {
+      background: rgba(0, 255, 136, 0.1);
+      border-left: 4px solid #00ff88;
+      padding: 1em;
+      margin: 1.5em 0;
+      border-radius: 8px;
+    }
+
+    .highlight-box strong {
+      color: #00ff88;
+    }
+
+    .cta-button {
+      display: block;
+      width: fit-content;
+      margin: 2em auto;
+      padding: 1em 1em;
+      background: linear-gradient(to bottom, #00ff88, #00cc6a);
+      color: #0a0e0a;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.3em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 8px;
+      border: 2px solid #00ff88;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 30px rgba(0, 255, 136, 0.8), 0 5px 20px rgba(0, 0, 0, 0.4);
+      background: linear-gradient(to bottom, #00ffaa, #00ff88);
+    }
+
+    .algorithm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+      margin-top: 1em;
+    }
+
+    .algorithm-card {
+      background: rgba(0, 255, 136, 0.05);
+      border: 1px solid #1a3a1a;
+      border-radius: 8px;
+      padding: 1em;
+      text-align: left;
+      transition: all 0.3s ease;
+    }
+
+    .algorithm-card:hover {
+      background: rgba(0, 255, 136, 0.1);
+      border-color: #00ff88;
+      box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+    }
+
+    .algorithm-card h3 {
+      color: #00ff88;
+      font-size: 1.1em;
+      margin-bottom: 0.5em;
+    }
+
+    .algorithm-card p {
+      color: #7fb87f;
+      font-size: 0.9em;
+      text-align: left;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Graph Algorithm Visualizations</h1>
+    </div>
+
+      
+      <div class="intro-content">
+        <h2>What Are Graphs?</h2>
+        <p>
+          In computer science, a graph is a data structure consisting of a set of nodes (vertices) connected by edges (links). 
+          Graphs represent relationships and connections between entities, making them one of the most fundamental and versatile 
+          data structures in computing.
+        </p>
+
+        <h2>Why Are Graph Algorithms Important?</h2>
+        
+        <p>
+          Graph algorithms are the backbone of modern computing and are essential for solving countless real-world problems. 
+          From GPS navigation systems finding the shortest route to recommendation engines suggesting products, graph algorithms 
+          power the digital infrastructure we rely on every day.
+        </p>
+
+        <div class="highlight-box">
+          <strong>Key Applications:</strong>
+          <ul>
+            <li><strong>Network Routing:</strong> Internet protocols use shortest path algorithms to route data efficiently</li>
+            <li><strong>Social Networks:</strong> Finding connections, suggesting friends, analyzing communities</li>
+            <li><strong>GPS Navigation:</strong> Finding optimal routes using Dijkstra's algorithm</li>
+            <li><strong>Web Search:</strong> PageRank algorithm ranks web pages based on link structure</li>
+            <li><strong>Circuit Design:</strong> Topological sorting ensures correct order of operations</li>
+            <li><strong>Resource Optimization:</strong> Minimum spanning trees minimize costs in networks</li>
+            <li><strong>Dependency Resolution:</strong> Building software in the correct order</li>
+            <li><strong>Bioinformatics:</strong> Analyzing protein interactions and genetic relationships</li>
+          </ul>
+        </div>
+
+        <h2>What You'll Learn</h2>
+        
+        <p>
+          This interactive visualization platform allows you to explore fundamental graph algorithms in action. 
+          Watch as algorithms traverse graphs, explore nodes, build trees, and find optimal solutions. 
+          Each visualization demonstrates the step-by-step process, making abstract concepts concrete and understandable.
+          Check out their pseudocodes, an easy-to-read version of the code to understand the logic without getting lost in syntax.
+        </p>
+
+        <div class="algorithm-grid">
+          <div class="algorithm-card">
+            <h3>BFS & DFS</h3>
+            <p>Traversal algorithms for exploring graphs systematically</p>
+          </div>
+          <div class="algorithm-card">
+            <h3>Shortest Path</h3>
+            <p>Dijkstra's and Floyd-Warshall find optimal routes</p>
+          </div>
+          <div class="algorithm-card">
+            <h3>Spanning Trees</h3>
+            <p>Prim and Kruskal build minimal cost networks</p>
+          </div>
+          <div class="algorithm-card">
+            <h3>Topological Sort</h3>
+            <p>Determines valid ordering in dependency graphs</p>
+          </div>
+        </div>
+
+        <div class="highlight-box" style="text-align: center;">
+          <strong style="color: #00ff88; font-size: 1.2em;">Start Your Journey</strong>
+          <p style="margin-top: 1em; text-align: center;">
+            Click below to explore interactive visualizations of these powerful algorithms. 
+            Watch them in action, understand their logic, and see how they solve complex problems.
+            You can choose from a set of parameters to familiarize yourself with how each algorithm performs under different conditions.
+            The animation can be paused, resumed, stepped through or back tracked to observe each operation in detail.
+          </p>
+        </div>  
+      </div>
+
+      <a href="Algorithms.html" class="cta-button">
+        EXPLORE ALGORITHMS
+      </a>
+    </div>
+  </div>
+</body>
+</html>

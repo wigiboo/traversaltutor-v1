@@ -1,0 +1,289 @@
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: linear-gradient(to bottom, #0a0e0a, #1a2e1a);
+	margin: 0;
+	padding: 0;
+	color: #e8fde8;
+	min-height: 100vh;
+}
+
+
+.about {
+margin-left:30px;
+  text-align:center;
+}
+
+
+.code {
+
+	background: #EEEEEE;
+}
+
+
+.menu {
+  margin: 2em auto;
+  padding: 2em;
+  width: 80%;
+  max-width: 800px;
+  background: linear-gradient(to bottom, #0f1610, #0a0e0a);
+  border: 2px solid #1a3a1a;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.3), inset 0 0 50px rgba(0, 255, 136, 0.1);
+  text-align: center;
+}
+
+.menu h2 {
+  color: #00ff88;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+  margin-bottom: 1em;
+}
+
+.menu ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+.menu ul {
+  margin-top: 1em;
+  padding-left: 0;
+}
+
+.menu ul li {
+  margin-bottom: 0.8em; /* Spacing between algorithm links */
+}
+
+.menu a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #00ff88;
+  font-size: 1.3em;
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  border: 2px solid #1a3a1a;
+  background: rgba(0, 255, 136, 0.1);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+  letter-spacing: 2px;
+}
+
+.menu a:hover {
+  color: #0a0e0a;
+  background: linear-gradient(to bottom, #00ffaa, #00ff88);
+  border-color: #00ff88;
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.8), 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+div.header h1 {
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #00ff88;
+	text-shadow: 0 0 20px rgba(0, 255, 136, 0.8), 0 0 40px rgba(0, 255, 136, 0.4);
+}
+
+
+div.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 100%;
+}
+
+div.header, div.footer {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	padding: 0 10px 0 20px;
+	color: #e8fde8;
+	background: linear-gradient(to right, #0a0e0a, #0f1610);
+	border-bottom: 2px solid #00ff88;
+	box-shadow: 0 4px 20px rgba(0, 255, 136, 0.4);
+}
+
+.footer a {
+	color: #00ff88;
+	transition: all 0.3s ease;
+}
+
+.footer a:hover {
+	color: #00ffaa;
+	text-shadow: 0 0 10px rgba(0, 255, 136, 0.6);
+}
+
+h1.header
+{
+padding:0;
+margin:0;
+}
+
+.contact {
+   text-align: center;
+   margin: 25px 0px 0px 400px;
+   position: absolute;
+   font-family: Helvetica, sans-serif;
+   color: #7fb87f;
+}
+
+/* Menu list styling */
+.menu ul li {
+  margin-bottom: 0.8em;
+  background: rgba(0, 255, 136, 0.05);
+  border: 1px solid #1a3a1a;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}.menu ul li:hover {
+  background: rgba(0, 255, 136, 0.1);
+  border-color: #00ff88;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+/* =============================
+index MENU Mobile Fixes 
+============================= */
+
+@media screen and (max-width: 1000px) {
+
+    /* 1. Force the body to never scroll horizontally */
+    body, html {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    /* 2. Global Container Fixes */
+    .container {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box; 
+    }
+
+    /* 3. Intro Container - The Black Box */
+    .intro-container {
+        width: 90% !important;
+        margin: 10px auto; 
+        padding: 1.5em 1em; 
+        box-sizing: border-box;
+    }
+
+/* 4. TITLE FIXES (Updated to fix off-center issue) */
+    /* FIX 1: Reset the container padding so it is perfectly centered */
+    div.header {
+        padding: 0 !important; 
+        width: 100% !important;
+        text-align: center;
+    }
+
+    /* FIX 2: Target the H1 text specifically */
+    .intro-container .header h1, 
+    div.header h1 { 
+        font-size: 1.6em !important; 
+        line-height: 1.2;
+        word-wrap: break-word; 
+        overflow-wrap: break-word; 
+        width: 100%;
+        padding: 1 1px; 
+        margin: 1 auto 1px auto;
+        text-align: center;
+    }
+
+    .intro-container h2 {
+        font-size: 1.3em;
+        margin-top: 1em;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    /* 5. Content Readability */
+    .intro-content {
+        font-size: 1em; 
+        text-align: left; 
+    }
+
+    /* 6. Algorithm Grid - Stacking Cards */
+    .algorithm-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .algorithm-card {
+        width: 100%;
+        box-sizing: border-box; 
+        margin: 0;
+    }
+
+    /* 7. Button Fixes */
+    .cta-button {
+        display: block; 
+        width: 100%; 
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 1.1em;
+        white-space: normal; 
+    }
+
+    /* 8. Fix Lists */
+    ul {
+        padding-left: 20px; 
+    }
+}
+
+/* =============================
+ALGORITHMS MENU Mobile Fixes
+============================= */
+
+    /* 1. Menu Container */
+    .menu {
+        width: 98% !important;
+        padding: 5px 5px !important;
+        margin: 15px auto !important;
+        box-sizing: border-box;
+    }
+
+    /* 2. Section Headers (e.g., "Greedy Algorithms...") */
+    .menu h3, .menu h2 {
+        font-size: 1.2em !important; 
+        line-height: 1.4 !important; 
+        margin-top: 20px;
+        margin-bottom: 15px;
+        white-space: normal; 
+        word-wrap: break-word;
+        padding: 2 2px; 
+    }
+
+    /* 3. Algorithm Links (The Buttons) */
+    .menu ul li a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1.1em !important;
+        padding: 10px 10px !important; 
+        margin: 5px auto;
+        white-space: normal;
+        line-height: 1.4;
+        height: auto; 
+    }
+
+    /* 4. "Back to Introduction" Button Fix */
+    .menu > a { 
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+        font-size: 1em !important;
+        padding: 5px 5px !important;
+        white-space: normal !important;
+        line-height: 1.3;
+        text-align: center;
+        margin: 0 auto;
+        word-wrap: break-word;
+    }
