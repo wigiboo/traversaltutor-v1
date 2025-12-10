@@ -1,0 +1,823 @@
+@charset "utf-8";
+
+
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: linear-gradient(to bottom, #0a0e0a, #1a2e1a);
+	margin: 0; 
+	padding: 0;
+	text-align: center; 
+	color: #e8fde8;
+}
+
+
+
+
+.VisualizationMainPage #mainContent {
+	background: #0f1610;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.VisualizationMainPage #mainContent > *:not(#pseudocodeSection) {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.VisualizationMainPage #container {
+	background: #0f1610;
+	text-align: left; 
+}
+
+
+.VisualizationMainPage #algoControlSection {
+	background: #0f1610;
+	color: #e8fde8;
+	border: 2px solid #1a3a1a;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 15px;
+	box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 10px;
+}
+
+.VisualizationMainPage #algoControlSection table {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.VisualizationMainPage #algoControlSection td {
+	display: block;
+	margin-bottom: 5px;
+}
+
+
+.VisualizationMainPage #generalAnimationControlSection {
+	background: #0f1610;
+	color: #e8fde8;
+	border: 2px solid #1a3a1a;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 15px;
+	box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 10px;
+}
+
+.VisualizationMainPage #generalAnimationControlSection table {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.VisualizationMainPage #generalAnimationControlSection td {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.VisualizationMainPage #header { 
+	background: linear-gradient(to right, #0a0e0a, #0f1610);
+	border-bottom: 2px solid #00ff88;
+	box-shadow: 0 4px 20px rgba(0, 255, 136, 0.4);
+	color: #00ff88;
+	padding: 0 10px 0 20px;
+} 
+ 
+.VisualizationMainPage #header A:visited { 
+	text-decoration: none;
+	color: #7fb87f;
+}
+
+.VisualizationMainPage #header h1 {
+	margin: 0; 
+	padding: 10px 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-shadow: 0 0 10px rgba(0, 255, 136, 0.6);
+	text-align: center;
+}
+
+.VisualizationMainPage #header A:link {
+	text-decoration: none;
+	color: #00ff88;
+}
+	
+	
+.VisualizationMainPage #container {
+	background: #0f1610;
+	margin: 0 auto; 
+	text-align: left;
+	border-radius: 12px;
+}
+	
+	
+.VisualizationMainPage #footer A:visited { 
+	text-decoration: none;
+	color: #7fb87f;
+}
+
+.VisualizationMainPage #footer A:link {
+	text-decoration: none;
+	color: #00ff88;
+}
+
+
+	
+
+.VisualizationMainPage #mainContent h1 {
+	padding: 0 20px; 
+	background: transparent;
+	color: #00ff88;
+	text-shadow: 0 0 10px rgba(0, 255, 136, 0.4);
+}
+
+.VisualizationMainPage #mainContent h2 {
+	padding: 0 20px; 
+	background: transparent;
+	color: #00ff88;
+}
+
+.VisualizationMainPage #mainContent h3 {
+	padding: 0 20px; 
+	background: transparent;
+	color: #00cc6a;
+}
+
+
+
+.VisualizationMainPage #footer { 
+	padding: 0 10px;
+	background: linear-gradient(to right, #0a0e0a, #0f1610);
+	border-top: 2px solid #00ff88;
+	box-shadow: 0 -4px 20px rgba(0, 255, 136, 0.4);
+	color: #e8fde8;
+}
+
+.VisualizationMainPage #footer p {
+	margin: 0; 
+	padding: 10px 0;
+}
+
+EM {text-decoration: bold;}
+
+/* Matrix Cyberpunk Theme Additions */
+
+/* Button styling */
+.VisualizationMainPage button, .VisualizationMainPage input[type="button"] {
+	background: linear-gradient(to bottom, #00ff88, #00cc6a);
+	color: #0a0e0a;
+	border: 2px solid #00ff88;
+	border-radius: 8px;
+	padding: 10px 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+.VisualizationMainPage button:hover, .VisualizationMainPage input[type="button"]:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 0 20px rgba(0, 255, 136, 0.6), 0 5px 15px rgba(0, 0, 0, 0.3);
+	background: linear-gradient(to bottom, #00ffaa, #00ff88);
+}
+
+.VisualizationMainPage button:active, .VisualizationMainPage input[type="button"]:active {
+	transform: translateY(0);
+	box-shadow: 0 0 15px rgba(0, 255, 136, 0.8);
+}
+
+.VisualizationMainPage button:disabled, .VisualizationMainPage input[type="button"]:disabled {
+	background: #1a3a1a;
+	color: #7fb87f;
+	border-color: #1a3a1a;
+	box-shadow: none;
+	cursor: not-allowed;
+}
+
+/* Table styling */
+.VisualizationMainPage table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.VisualizationMainPage table button {
+	margin: 5px;
+	font-size: 1.5em;
+}
+
+/* Canvas area styling */
+.VisualizationMainPage canvas {
+	border: 2px solid #1a3a1a;
+	border-radius: 12px;
+	background: #476a40;
+	box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+	margin: 10px auto;
+	display: block;
+	min-height: 400px;
+	cursor: crosshair;
+}
+
+/* Text input styling */
+.VisualizationMainPage input[type="text"], .VisualizationMainPage input[type="number"] {
+	background: #0f1610;
+	color: #e8fde8;
+	border: 2px solid #1a3a1a;
+	border-radius: 5px;
+	padding: 8px;
+	transition: all 0.3s ease;
+}
+
+.VisualizationMainPage input[type="text"]:focus, .VisualizationMainPage input[type="number"]:focus {
+	outline: none;
+	border-color: #00ff88;
+	box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+/* jQuery UI Slider custom styling */
+.ui-slider {
+	background: #0f1610 !important;
+	border: 2px solid #1a3a1a !important;
+}
+
+.ui-slider-handle {
+	background: linear-gradient(to bottom, #00ff88, #00cc6a) !important;
+	border: 2px solid #00ff88 !important;
+	box-shadow: 0 0 10px rgba(0, 255, 136, 0.5) !important;
+}
+
+.ui-slider-range {
+	background: linear-gradient(to bottom, #00ff88, #00cc6a) !important;
+	box-shadow: 0 0 10px rgba(0, 255, 136, 0.3) !important;
+}
+
+/* Graph Canvas Styling - Node States */
+.node-default {
+	fill: #7fb87f;
+	stroke: #0a0e0a;
+	stroke-width: 2px;
+}
+
+.node-current {
+	fill: #ffffff;
+	stroke: #0a0e0a;
+	stroke-width: 2px;
+	filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+}
+
+.node-visited {
+	fill: #00ff88;
+	stroke: #0a0e0a;
+	stroke-width: 2px;
+	filter: drop-shadow(0 0 15px rgba(0, 255, 136, 1));
+}
+
+.node-label {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-anchor: middle;
+	dominant-baseline: central;
+	fill: #0a0e0a;
+}
+
+/* Graph Canvas Styling - Edge Styles */
+.edge-default {
+	stroke: #2a4a2a;
+	stroke-width: 2px;
+}
+
+.edge-active {
+	stroke: #00ff88;
+	stroke-width: 3px;
+}
+
+.edge-weight {
+	font-family: 'Courier New', monospace;
+	font-size: 12px;
+	fill: #7fb87f;
+	text-anchor: middle;
+	dominant-baseline: central;
+}
+
+/* Animation Overlay */
+.animation-overlay {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #0a0e0a;
+	border: 2px solid #00ff88;
+	border-radius: 8px;
+	padding: 12px 24px;
+	color: #00ff88;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+	animation: pulse 2s ease-in-out infinite;
+	z-index: 1000;
+}
+
+@keyframes pulse {
+	0%, 100% {
+		box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+	}
+	50% {
+		box-shadow: 0 0 25px rgba(0, 255, 136, 0.9);
+	}
+}
+
+/* Right Sidebar Panels */
+.sidebar-panel {
+	width: 320px;
+	background: #0f1610;
+	border: 2px solid #1a3a1a;
+	border-radius: 12px;
+	padding: 1.5rem;
+	margin-bottom: 1rem;
+	box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+}
+
+.sidebar-panel h3 {
+	color: #00ff88;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 0 0 1rem 0;
+	font-size: 0.9rem;
+	border-bottom: 1px solid #1a3a1a;
+	padding-bottom: 0.5rem;
+}
+
+/* Algorithm Info Panel */
+.algorithm-info-panel {
+	line-height: 1.8;
+	color: #7fb87f;
+	font-size: 0.95rem;
+}
+
+/* Pseudocode Panel */
+.pseudocode-panel {
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+.pseudocode-panel pre {
+	background: #0a0e0a;
+	border: 1px solid #1a3a1a;
+	border-radius: 8px;
+	padding: 1rem;
+	color: #7fb87f;
+	font-family: 'Courier New', monospace;
+	font-size: 0.85rem;
+	white-space: pre;
+	margin: 0;
+	line-height: 1.6;
+}
+
+/* Sidebar Layout */
+.sidebar-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	position: fixed;
+	right: 20px;
+	top: 100px;
+	max-height: calc(100vh - 140px);
+	overflow-y: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+	.sidebar-container {
+		position: relative;
+		right: auto;
+		top: auto;
+		width: 100%;
+		max-width: 100%;
+	}
+	
+	.sidebar-panel {
+		width: 100%;
+	}
+}
+
+/* Pseudocode Panel - Right Side */
+.VisualizationMainPage #pseudocodeSection {
+	width: 350px;
+	background: #0f1610;
+	border: 2px solid #1a3a1a;
+	border-radius: 12px;
+	padding: 1.5rem;
+	box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+	max-height: calc(100vh - 200px);
+	overflow-y: auto;
+}
+
+.VisualizationMainPage #pseudocodeSection h3 {
+	color: #00ff88;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 0 0 1rem 0;
+	font-size: 0.9rem;
+	border-bottom: 1px solid #1a3a1a;
+	padding-bottom: 0.5rem;
+}
+
+.VisualizationMainPage #pseudocodeSection pre {
+	background: #0a0e0a;
+	border: 1px solid #1a3a1a;
+	border-radius: 8px;
+	padding: 1rem;
+	color: #7fb87f;
+	font-family: 'Courier New', monospace;
+	font-size: 0.85rem;
+	white-space: pre;
+	margin: 0 0 1rem 0;
+	line-height: 1.6;
+	overflow-y: auto;
+}
+
+.VisualizationMainPage #pseudocodeSection .algorithm-explanation {
+	color: #7fb87f;
+	font-size: 0.95rem;
+	line-height: 1.8;
+	margin: 0;
+	padding: 0.5rem;
+	background: rgba(0, 255, 136, 0.05);
+	border-radius: 8px;
+	border-left: 3px solid #00ff88;
+	padding-left: 1rem;
+}
+
+.VisualizationMainPage #pseudocodeSection .algorithm-explanation h4 {
+	color: #00ff88;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 0 0 0.5rem 0;
+	font-size: 0.85rem;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 1100px) {
+    
+    /* 1. Main Container: Stack vertically */
+    .VisualizationMainPage #mainContent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* 2. Reset all children to full width */
+    .VisualizationMainPage #mainContent > * {
+        width: 95% !important;  
+        margin: 10px auto !important; 
+        flex: none !important;
+        max-width: none !important;
+    }
+
+    /* 3. Reorder the Elements - Canvas on top for better mobile visibility */
+    .VisualizationMainPage canvas { order: 1; }
+    .VisualizationMainPage #algoControlSection { order: 2; }
+    .VisualizationMainPage #generalAnimationControlSection { order: 3; }
+    .VisualizationMainPage #pseudocodeSection { order: 4; }
+
+    /* 4. Canvas Sizing */
+    .VisualizationMainPage canvas {
+        width: 100% !important; 
+        height: auto !important; 
+        box-sizing: border-box; 
+    }
+
+    /* 5. Pseudocode Panel Fixes */
+    .VisualizationMainPage #pseudocodeSection {
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible;
+    }
+    
+    /* Wrap long lines of code so they don't break the layout */
+    .VisualizationMainPage #pseudocodeSection pre {
+        white-space: pre-wrap; 
+        word-wrap: break-word;
+        font-size: 12px; 
+    }
+
+    /* 6. Button & Input Sizing */
+    .VisualizationMainPage button, 
+    .VisualizationMainPage input[type="button"] {
+        width: 100%; 
+        margin: 5px 0;
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    .VisualizationMainPage input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    /* 7. FORCE TABLES TO BREAK (Crucial for your specific code) */
+    /* Controls are in tables, which don't resize well. This forces them to stack. */
+    .VisualizationMainPage table, 
+    .VisualizationMainPage tbody, 
+    .VisualizationMainPage tr, 
+    .VisualizationMainPage td {
+        display: block; 
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Remove padding from table cells to save space */
+    .VisualizationMainPage td {
+        padding: 0;
+        border: none;
+    }
+}
+
+/* =========================================
+   MOBILE & TABLET OPTIMIZATIONS (Algorithm Pages)
+   Replace the bottom section of visualizationPageStyle.css
+   ========================================= */
+
+@media screen and (max-width: 1100px) {
+    
+    /* 1. LOCK HORIZONTAL SCROLLING */
+    body, html {
+        overflow-x: hidden !important;
+        width: 100%;
+        position: relative;
+    }
+
+    /* 2. LAYOUT: Stack elements */
+    .VisualizationMainPage #mainContent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* 3. ORDERING - Canvas on top, controls and text below */
+    .VisualizationMainPage canvas { order: 1; }
+    .VisualizationMainPage #algoControlSection { order: 2; }
+    .VisualizationMainPage #generalAnimationControlSection { order: 3; }
+    .VisualizationMainPage #pseudocodeSection { order: 4; }
+
+    /* 4. DYNAMIC CANVAS SIZE (The Fix for iPad/Pro Phones) - Increased for better visibility */
+    .VisualizationMainPage canvas {
+        width: 99% !important; /* Almost full width */
+        margin: 0 auto !important;
+        height: auto !important;
+        /* On Tablets, let it grow to 65% of screen height for better visibility */
+        max-height: 65vh; 
+        min-height: 400px; /* Increased from 300px to 400px for better visibility */
+        object-fit: contain;
+    }
+
+    /* 5. TOP CONTROLS */
+    .VisualizationMainPage #algoControlSection {
+        width: 96% !important;
+        margin: 5px auto !important;
+        padding: 10px !important;
+        box-sizing: border-box;
+    }
+    
+    /* Side-by-side action buttons */
+    .VisualizationMainPage #algoControlSection input[type="button"] {
+        display: inline-block;
+        width: 48% !important;
+        margin: 1% !important;
+        padding: 12px 5px !important; /* Taller touch targets */
+        font-size: 13px;
+    }
+    
+    .VisualizationMainPage #algoControlSection input[type="text"] {
+        width: 95% !important;
+        padding: 10px; /* Easier to tap */
+    }
+
+    /* 6. PLAYBACK CONTROLS (Horizontal Layout) */
+    .VisualizationMainPage #generalAnimationControlSection table,
+    .VisualizationMainPage #generalAnimationControlSection tbody,
+    .VisualizationMainPage #generalAnimationControlSection tr {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    .VisualizationMainPage #generalAnimationControlSection td {
+        display: inline-block !important;
+        width: auto !important;
+        padding: 2px !important;
+    }
+
+    .VisualizationMainPage #generalAnimationControlSection input[type="button"] {
+        min-width: 45px; /* Bigger touch targets */
+        padding: 10px 15px !important;
+        margin: 2px !important;
+        font-size: 16px !important; /* Larger icons */
+        flex: 1;
+    }
+
+    /* 7. PSEUDOCODE PANEL */
+    .VisualizationMainPage #pseudocodeSection {
+        width: 96% !important;
+        margin: 10px auto;
+        max-height: 30vh; /* Dynamic height based on screen size */
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+}
+
+/* =========================================
+   SPECIAL FIX FOR TABLETS (iPad Mini, Air, etc.)
+   Add this immediately AFTER the block above
+   ========================================= */
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+    /* Give tablets a much bigger canvas - Increased for better visibility */
+    .VisualizationMainPage canvas {
+        max-height: 70vh !important; /* Increased from 60% to 70% of screen height */
+    }
+    
+    /* Make controls larger for tablet fingers */
+    .VisualizationMainPage #algoControlSection input[type="button"] {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+/* =========================================
+   BACK BUTTON STYLING (FIXED)
+   ========================================= */
+.back-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    
+    /* Matrix Theme Colors */
+    background: linear-gradient(to bottom, #0f1610, #0a0e0a);
+    color: #00ff88; 
+    border: 2px solid #00ff88;
+    border-radius: 8px;
+    
+    /* Text Styling */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    /* Glow Effect */
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+    transition: all 0.3s ease;
+    
+    /* CRITICAL FIX: Include padding in width calculation */
+    box-sizing: border-box; 
+    max-width: 95%; /* Never let it exceed screen width */
+}
+
+.back-btn:hover {
+    background: #00ff88;
+    color: #000000;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+/* Mobile Tweak for the Button */
+@media screen and (max-width: 1000px) {
+    .back-btn {
+        display: block; /* Make it a block element */
+        width: 90%; /* Take up most of the screen */
+        margin: 0px auto 20px auto; /* Add extra bottom space (40px) so it doesn't touch the edge */
+        text-align: center;
+        white-space: normal; /* Allow text to wrap if the phone is very small */
+        line-height: 1.4;
+    }
+}
+
+/* =========================================
+   CONTROL PANEL HEADERS
+   ========================================= */
+.control-header {
+    color: #00ff88;           /* Matrix Green */
+    font-weight: bold;
+    font-size: 11px;          /* Small but readable */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 12px;         /* Space from previous group */
+    margin-bottom: 4px;       /* Space before the radio buttons */
+    border-bottom: 1px solid rgba(0, 255, 136, 0.3); /* Subtle divider line */
+    width: 100%;
+    text-align: left;
+}
+
+/* Remove margin from the very first header so it fits tight */
+.control-header:first-of-type {
+    margin-top: 5px;
+}
+
+/* Mobile Tweak: Ensure they don't break the layout */
+@media screen and (max-width: 1000px) {
+    .control-header {
+        font-size: 10px; /* Even smaller on phone */
+        margin-top: 8px;
+        text-align: center; /* Center them on mobile for symmetry */
+    }
+}
+
+/* =========================================
+   MOBILE-ONLY LAYOUT (Dedicated UI)
+   ========================================= */
+.mobile-mode #container {
+    padding: 8px;
+}
+
+.mobile-mode #mainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mobile-mode canvas {
+    width: 100% !important;
+    height: 65vh !important;
+    min-height: 360px;
+    max-height: none;
+    margin: 0 auto;
+}
+
+.mobile-accordion {
+    background: #0f1610;
+    border: 2px solid #1a3a1a;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+}
+
+.mobile-accordion__item {
+    border: 1px solid #1a3a1a;
+    border-radius: 8px;
+    margin: 6px 0;
+    overflow: hidden;
+}
+
+.mobile-accordion__title {
+    list-style: none;
+    background: rgba(0, 255, 136, 0.08);
+    color: #00ff88;
+    padding: 10px 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.mobile-accordion__title::-webkit-details-marker {
+    display: none;
+}
+
+.mobile-accordion__panel {
+    padding: 10px;
+    border-top: 1px solid #1a3a1a;
+}
+
+.mobile-mode #algoControlSection,
+.mobile-mode #generalAnimationControlSection,
+.mobile-mode #pseudocodeSection {
+    width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+}
+
+.mobile-mode #pseudocodeSection {
+    max-height: none !important;
+}
