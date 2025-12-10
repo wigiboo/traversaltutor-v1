@@ -1,9 +1,13 @@
 var AUX_ARRAY_WIDTH = 35;  // Increased from 25 to 35 for better visibility
 var AUX_ARRAY_HEIGHT = 35; // Increased from 25 to 35 for better visibility
-var AUX_ARRAY_START_Y = 50;
+// Position below adjacency tables (if shown) or below graph
+// Adjacency tables end around Y=480 + (8*40) = 800, so place arrays at Y=820
+var AUX_ARRAY_START_Y = 820; // Below adjacency tables, closer to graph
 
-var VISITED_START_X = 475;
-var PARENT_START_X = 400;
+// Align parent/visited arrays with graph center (~600 for small graph)
+// Two arrays side by side, centered below graph
+var VISITED_START_X = 520;  // Centered: ~600 - 80 = 520
+var PARENT_START_X = 440;   // Centered: ~600 - 160 = 440 (aligned with matrix)
 
 var HIGHLIGHT_CIRCLE_COLOR = "#000000";
 var DFS_TREE_COLOR = "#0000FF";

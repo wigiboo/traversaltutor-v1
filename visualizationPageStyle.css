@@ -505,10 +505,12 @@ EM {text-decoration: bold;}
     .VisualizationMainPage #generalAnimationControlSection { order: 3; }
     .VisualizationMainPage #pseudocodeSection { order: 4; }
 
-    /* 4. Canvas Sizing */
+    /* 4. Canvas Sizing - Increased for better mobile visibility */
     .VisualizationMainPage canvas {
         width: 100% !important; 
         height: auto !important; 
+        max-height: 90vh !important; /* Increased for better visibility */
+        min-height: 600px !important; /* Increased minimum height */
         box-sizing: border-box; 
     }
 
@@ -591,12 +593,12 @@ EM {text-decoration: bold;}
 
     /* 4. DYNAMIC CANVAS SIZE (The Fix for iPad/Pro Phones) - Increased for better visibility */
     .VisualizationMainPage canvas {
-        width: 99% !important; /* Almost full width */
+        width: 100% !important; /* Full width for maximum visibility */
         margin: 0 auto !important;
         height: auto !important;
-        /* On Tablets, let it grow to 65% of screen height for better visibility */
-        max-height: 65vh; 
-        min-height: 400px; /* Increased from 300px to 400px for better visibility */
+        /* On Mobile, let it grow to 90% of screen height for much better visibility */
+        max-height: 90vh !important; 
+        min-height: 600px !important; /* Significantly increased from 450px */
         object-fit: contain;
     }
 
@@ -665,7 +667,8 @@ EM {text-decoration: bold;}
 @media screen and (min-width: 600px) and (max-width: 1100px) {
     /* Give tablets a much bigger canvas - Increased for better visibility */
     .VisualizationMainPage canvas {
-        max-height: 70vh !important; /* Increased from 60% to 70% of screen height */
+        max-height: 90vh !important; /* Increased to 90% of screen height for maximum visibility */
+        min-height: 700px !important; /* Increased minimum height for tablets */
     }
     
     /* Make controls larger for tablet fingers */
