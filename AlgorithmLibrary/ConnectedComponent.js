@@ -1,30 +1,36 @@
 var AUX_ARRAY_WIDTH = 35;  // Increased from 25 to 35 for better visibility
 var AUX_ARRAY_HEIGHT = 35; // Increased from 25 to 35 for better visibility
-var AUX_ARRAY_START_Y = 100;
+// Position below adjacency tables (if shown) or below graph
+// Adjacency tables end around Y=480 + (8*40) = 800, so place arrays at Y=820
+var AUX_ARRAY_START_Y = 820; // Below adjacency tables, closer to graph
 
-var VISITED_START_X = 475;
-var PARENT_START_X = 400;
+// Align parent/visited arrays with graph center (~600 for small graph)
+// Two arrays side by side, centered below graph
+var VISITED_START_X = 520;  // Centered: ~600 - 80 = 520
+var PARENT_START_X = 440;   // Centered: ~600 - 160 = 440 (aligned with matrix)
 
 
-var D_X_POS_SMALL = [760, 685, 915, 610, 910, 685, 915, 760];
-var F_X_POS_SMALL = [760, 685, 915, 610, 910, 685, 915, 760];
+// Updated to match new centered graph positions: [600, 525, 675, 450, 750, 525, 675, 600]
+var D_X_POS_SMALL = [560, 485, 635, 410, 710, 485, 635, 560];
+var F_X_POS_SMALL = [560, 485, 635, 410, 710, 485, 635, 560];
 
 
 
 var D_Y_POS_SMALL = [18, 118, 118, 218, 218, 318, 318, 418];
 var F_Y_POS_SMALL = [32, 132, 132, 232, 232, 332, 332, 432];
 
-var D_X_POS_LARGE = [560, 660, 760, 860,
-									610, 710, 810,
-									560, 660, 760, 860,
-									610, 710, 810,
-									560, 660, 760, 860];
+// Updated to match new centered large graph positions
+var D_X_POS_LARGE = [460, 560, 660, 760,
+									510, 610, 710,
+									460, 560, 660, 760,
+									510, 610, 710,
+									460, 560, 660, 760];
 
-var F_X_POS_LARGE = [560, 660, 760, 860,
-									610, 710, 810,
-									560, 660, 760, 860,
-									610, 710, 810,
-									560, 660, 760, 860];
+var F_X_POS_LARGE = [460, 560, 660, 760,
+									510, 610, 710,
+									460, 560, 660, 760,
+									510, 610, 710,
+									460, 560, 660, 760];
 
 var D_Y_POS_LARGE = [37, 37, 37, 37,
 									137, 137, 137,

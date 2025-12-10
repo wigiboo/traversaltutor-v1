@@ -66,11 +66,12 @@ var LARGE_CURVE  = [[0, 0, -0.4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.25, 0, 0, 0]
 
 
 
-var LARGE_X_POS_LOGICAL = [600, 700, 800, 900,
-										  650, 750, 850,
-										  600, 700, 800, 900,
-										  650, 750, 850,
-										  600, 700, 800, 900];
+// Centered large graph: canvas center is 600, keep nodes centered around 600
+var LARGE_X_POS_LOGICAL = [500, 600, 700, 800,
+										  550, 650, 750,
+										  500, 600, 700, 800,
+										  550, 650, 750,
+										  500, 600, 700, 800];
 
 
 var LARGE_Y_POS_LOGICAL = [50, 50, 50, 50,
@@ -98,18 +99,21 @@ var SMALL_CURVE = [[0, 0.001, 0, 0.5, -0.5, 0, 0, 0],
 								  [0, 0.2, 0, 0, 0, 0, 0, 0],
 								  [0, 0, 0, -0.5, 0.5, 0, 0, 0]]
 
-var SMALL_X_POS_LOGICAL = [800, 725, 875, 650, 950, 725, 875, 800];
-var SMALL_Y_POS_LOGICAL = [25, 125, 125, 225, 225, 325, 325, 425];
+// Centered graph nodes: canvas center is 600, graph spans ~300px, so center nodes around 600
+// Original: [800, 725, 875, 650, 950, 725, 875, 800] -> shift left by 200 to center at 600
+var SMALL_X_POS_LOGICAL = [600, 525, 675, 450, 750, 525, 675, 600];
+var SMALL_Y_POS_LOGICAL = [50, 150, 150, 250, 250, 350, 350, 450];
 
 
 // Tables positioned below graph circles (vertical layout) - centered horizontally
-var SMALL_ADJ_MATRIX_X_START = 650;  // Centered below graph (graph center ~800)
-var SMALL_ADJ_MATRIX_Y_START = 500;  // Below graph circles (highest Y is 425)
+// Small graph center: ~600 (X range 450-750), matrix width = 8*40 = 320px
+var SMALL_ADJ_MATRIX_X_START = 440;  // Centered: 600 - (320/2) = 440
+var SMALL_ADJ_MATRIX_Y_START = 480;  // Close to graph circles (highest Y is 450, only 30px gap)
 var SMALL_ADJ_MATRIX_WIDTH = 40;    // Increased from 30 to 40 for better visibility
 var SMALL_ADJ_MATRIX_HEIGHT = 40;   // Increased from 30 to 40 for better visibility
 
-var SMALL_ADJ_LIST_X_START = 550;   // Centered below graph
-var SMALL_ADJ_LIST_Y_START = 500;   // Below graph circles
+var SMALL_ADJ_LIST_X_START = 400;   // Centered below graph (aligned with matrix)
+var SMALL_ADJ_LIST_Y_START = 480;   // Close to graph circles
 
 var SMALL_ADJ_LIST_ELEM_WIDTH = 60;  // Increased from 50 to 60 for better visibility
 var SMALL_ADJ_LIST_ELEM_HEIGHT = 40; // Increased from 30 to 40 for better visibility
@@ -121,13 +125,14 @@ var SMALL_ADJ_LIST_SPACING = 18;    // Increased from 15 to 18 for better spacin
 
 
 // Tables positioned below graph circles (vertical layout) - centered horizontally
-var LARGE_ADJ_MATRIX_X_START = 500;  // Centered below graph (graph center ~750)
-var LARGE_ADJ_MATRIX_Y_START = 500;  // Below graph circles (highest Y is 450)
+// Large graph center: ~650 (X range 500-800), matrix width = 18*32 = 576px
+var LARGE_ADJ_MATRIX_X_START = 362;  // Centered: 650 - (576/2) = 362
+var LARGE_ADJ_MATRIX_Y_START = 480;  // Close to graph circles (highest Y is 450, only 30px gap)
 var LARGE_ADJ_MATRIX_WIDTH = 32;     // Increased from 23 to 32 for better visibility
 var LARGE_ADJ_MATRIX_HEIGHT = 32;   // Increased from 23 to 32 for better visibility
 
-var LARGE_ADJ_LIST_X_START = 450;    // Centered below graph
-var LARGE_ADJ_LIST_Y_START = 500;   // Below graph circles
+var LARGE_ADJ_LIST_X_START = 320;    // Centered below graph (aligned with matrix)
+var LARGE_ADJ_LIST_Y_START = 480;   // Close to graph circles
 
 var LARGE_ADJ_LIST_ELEM_WIDTH = 55;  // Increased from 50 to 55 for better visibility
 var LARGE_ADJ_LIST_ELEM_HEIGHT = 35; // Increased from 26 to 35 for better visibility
